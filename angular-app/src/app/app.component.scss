@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+.container {
+  min-height: 100%;
+  max-width: 100%;
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Spinner styles
+
+.spinner {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+.s {
+  border-radius: 50%;
+  border-left: 4px solid;
+  border-right: 4px solid;
+  border-top: 4px solid transparent !important;
+  border-bottom: 4px solid transparent !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ro 2s infinite;
+}
+
+.s1 {
+  border-color: rgb(14, 69, 22);
+  width: 820px;
+  height: 520px;
+}
+
+.s2 {
+  border-color: rgb(10, 7, 1);
+  width: 100px;
+  height: 100px;
+  animation-delay: 0.2s;
+}
+
+.s3 {
+  border-color: #2ECC71;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0.4s;
+}
+
+.s4 {
+  border-color: rgb(175, 189, 172);
+  width: 60px;
+  height: 60px;
+  animation-delay: 0.6s;
+}
+}
+
+@keyframes ro {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  
+  50% {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+  
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
