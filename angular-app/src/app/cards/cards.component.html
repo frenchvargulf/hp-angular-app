@@ -1,0 +1,33 @@
+<mat-card *ngIf="(characters$ | async) as character" 
+  (window:keyup.arrowleft)="getPrevPage()" 
+  (window:keyup.arrowright)="getNextPage()">
+    <mat-card-header>
+      <mat-card-title>{{ character.name }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>bloodStatus: {{ character.bloodStatus }}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>deathEater: {{ character.deathEater }}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>dumbledoresArmy: {{ character.dumbledoresArmy }}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>House: {{ character.house }}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>ministryOfMagic: {{ character.ministryOfMagic }}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>orderOfThePhoenix: {{ character.orderOfThePhoenix }}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>role: {{ character.role }}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>school: {{ character.school }}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>species: {{ character.species }}</mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="getPrevPage()">PREV</button>
+      <button mat-raised-button (click)="getNextPage()">NEXT</button>
+    </mat-card-actions>
+</mat-card>
