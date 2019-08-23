@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+html {
+    background-color: #AAAAAA;
+    background-image: linear-gradient(107deg, #AAAAAA 0%, #1A472A 100%);
+}
