@@ -9,7 +9,8 @@ Angular App with Client side
 Boostrapped with creare-react-app. 
 
 ## Technologies used
-    Angukar
+    Angular
+    TypeScript
     HTTP requests
     Surge
 
